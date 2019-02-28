@@ -81,18 +81,14 @@ public class Shuffler {
         int shuffled[] = new int[52];
         int k = 0;
         int j =0;
-        for (k = 0; k < 52; k++) ;
+        for ( k = 0; k < 52; k++) ;
         {
-            values[j] = shuffled[k];
-            k = k+2;
+            j= (int) Math.random()*52;
+            values[j]= shuffled[k];
+            values[j] = -1;
         }
-        k = 1;
-        for (j = 26; j < 52; j++) ;
-        {
-            values[j] = shuffled[k];
-            k = k+2;
-        }
-    }
+
+
     }
 }
 
